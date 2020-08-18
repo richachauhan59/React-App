@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainList from './components/List2/list_main'
+import Main from './Profile/main'
+import MainButton from './components/React_Menu/button_main'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      {/* <Main/> */}
+      {/* <MainList/> */}
+      <MainButton/>
+
+
+
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.cont {
+    display: flex;
+    flex-direction: row;
+
+}
+.cont  Button{
+    height: 60px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 90%;
+}
+
+.btn1{
+    background: rgb(221, 65, 37);
+}
+
+.btn2{
+    background: rgb(98, 192, 20);
+}
+
+.btn3{
+    background: rgb(16, 19, 179);
+}
+
+.btn4{
+    background: rgb(211, 15, 113);
+}
+
+.btn5{
+    background: rgb(153, 134, 131);
+}
+
+.btn6{
+    background: rgb(54, 165, 132);
+}
+
+.btn7{
+    background: rgb(20, 208, 233);
+}
+
+.btn8{
+    background: rgb(223, 191, 52);
+}

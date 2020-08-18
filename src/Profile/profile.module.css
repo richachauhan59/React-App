@@ -1,0 +1,71 @@
+.main{
+    background-color: rgb(83, 78, 78);
+    height: 800px;
+    width: 600px;
+    margin-left: 20%; 
+    color : #33c9dc;
+    position: relative;
+    margin-top:8% ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ClassImg{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 200px;
+    margin-top: 1% ;
+}
+.btn_foll{
+    height: 60px;
+    width: 150px;
+    font-size: x-large;
+    background: transparent;
+}
+.btn_msg{
+    float: left;
+    margin-left: 20%;
+    height: 60px;
+    width: 150px;
+    font-size: x-large;
+    background:#33c9dc ;
+    
+}
+.btn{
+    margin-top: 10%;
+   
+}
+
+.btn_pro {
+    float: left;
+    height: 30px;
+    width: 60px;
+    background: rgb(209, 209, 55);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 900;
+    font-size: large;
+}
+
+
+.skills {
+    flex-shrink: 1;
+    border-radius: 5px;
+    border: 2px solid #0d161a;
+    color: #33c9dc;
+    padding: 5px 10px;
+    margin: 5px;
+    flex-wrap: wrap;
+    background: transparent;
+    height: 40px;
+    font-size: larger;
+}
+
+
+
+.skillsDiv{
+    margin-top: 40px;
+    margin-left:60px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
