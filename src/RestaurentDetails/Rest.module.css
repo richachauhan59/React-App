@@ -1,0 +1,38 @@
+.mainDiv{
+    margin-top: 9%;
+}
+body{
+    background-color: rgb(241, 239, 239);
+}
+.mainDiv > .ChildDiv{
+    margin: 3%;
+    background-color: rgb(184, 195, 195);
+    height: 300px;
+    padding: 1%;
+}
+.detDiv{
+    float: left;
+}
+.btn{
+    background: seagreen;
+    height: 35px;
+    width: auto;
+    margin: 2px;
+}
+.img{
+    width: 300px;
+    float: left;
+    padding: 1%;
+    height: 250px;
+}
+.ratingDiv{
+    /* background:red; */
+    display: flex;
+    direction: row;
+    float: right;
+    margin-right:30% ;
+}
+
+.ratingDiv *{
+    margin: 30px;
+}
