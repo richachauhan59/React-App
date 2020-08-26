@@ -15,14 +15,12 @@ export default class Form extends React.Component{
             items:[]
         }
     }
-       
         // full name
         // age
         // marital status ( use checkbox )
         // gender ( use radio button ) ( M / F / Do not prefer to reveal )
         // role applying for: ( use select tag ) ( Full stack developer / Android developer / Frontend developer )
-
-   
+        
       HandleSubmit= (e)=>{
        e.preventDefault();
        const {name, age, marital, role, gender, items} = this.state
