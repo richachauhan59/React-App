@@ -9,6 +9,9 @@ import Card from './Optional/MainProfileCard'
 import IsAuth from './React Events/IsAuth'
 import ToDo from './toDo/MainToDo'
 import DisplayCard from './DisplayCard/mainCard'
+import Form from './Forms/MainForm'
+import FormBasic from './React Forms-basic/formBasic'
+
 
 function App() {
   return (
@@ -20,11 +23,16 @@ function App() {
       {/* <Restaurent/> */}
       {/* <Card/> */}
 
-      <IsAuth/>
+      {/*DATE  25/Aug/2020 */}
 
-      <ToDo/>
+      {/* <IsAuth/> */}
+      {/* <ToDo/> */}
+      {/* <DisplayCard/> */}
 
-    {/* <DisplayCard/> */}
+      {/*DATE  26/Aug/2020 */}
+      {/* <Form/> */}
+      <FormBasic/>
+
 
     </div>
   );
