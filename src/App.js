@@ -11,6 +11,7 @@ import ToDo from './toDo/MainToDo'
 import DisplayCard from './DisplayCard/mainCard'
 import Form from './Forms/MainForm'
 import FormBasic from './React Forms-basic/formBasic'
+import LineThrough from './React - Update-lineThrough/todoLinethrough'
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
 
       {/*DATE  26/Aug/2020 */}
       {/* <Form/> */}
-      <FormBasic/>
+      {/* <FormBasic/> */}
+      <LineThrough/>
 
 
     </div>
