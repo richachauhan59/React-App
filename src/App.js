@@ -12,6 +12,7 @@ import DisplayCard from './DisplayCard/mainCard'
 import Form from './Forms/MainForm'
 import FormBasic from './React Forms-basic/formBasic'
 import LineThrough from './React - Update-lineThrough/todoLinethrough'
+import GitHub from './GitHub/GitHub.jsx'
 
 
 function App() {
@@ -33,7 +34,10 @@ function App() {
       {/*DATE  26/Aug/2020 */}
       {/* <Form/> */}
       {/* <FormBasic/> */}
-      <LineThrough/>
+      {/* <LineThrough/> */}
+
+      {/* DATE 27/AUG/2020 */}
+      <GitHub/>
 
 
     </div>
