@@ -13,10 +13,12 @@ export default class GitHub extends React.Component {
         .then((data) => data.json())
         .then((data)=> this.setState({data:data}))
     }
+
     // Create a component that accepts a github user name
     // on mounting of the component
     // use fetch api and load the users details and populate on the page with image,
     // url and other relevant information
+    
     render(){
         const {data} = this.state
         console.log(data)

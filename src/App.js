@@ -13,6 +13,8 @@ import Form from './Forms/MainForm'
 import FormBasic from './React Forms-basic/formBasic'
 import LineThrough from './React - Update-lineThrough/todoLinethrough'
 import GitHub from './GitHub/GitHub.jsx'
+import Timer from './Timer_ComponentWillUnmount/Timer.jsx'
+import GitHubAPI from './GitHubAxios/githubAPI'
 
 
 function App() {
@@ -37,8 +39,11 @@ function App() {
       {/* <LineThrough/> */}
 
       {/* DATE 27/AUG/2020 */}
-      <GitHub/>
+      {/* <GitHub/> */}
+      {/* <Timer/> */}
 
+      {/* DATE 28/ AUg/ 2020 */}
+      <GitHubAPI/>
 
     </div>
   );
