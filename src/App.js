@@ -40,10 +40,10 @@ function App() {
 
       {/* DATE 27/AUG/2020 */}
       {/* <GitHub/> */}
-      {/* <Timer/> */}
+      <Timer/>
 
       {/* DATE 28/ AUg/ 2020 */}
-      <GitHubAPI/>
+      {/* <GitHubAPI/> */}
 
     </div>
   );

@@ -4,59 +4,86 @@ export default class Timer extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            time: 0
+            second: 0,
+            show: false,
+            TimeOut: ""
         }
     }
 
-    HandleChange = e =>{
+    handleChange = (e) =>{
         this.setState({
-            time: e.target.value
+            [e.target.name] : e.target.value
         })
-        console.log(this.state.time)
     }
 
-
-
-    componentWillMount = ()=>{
-
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        this.internalId = setInterval(()=>{
+            if(this.state.second < 1){
+               this.setState({
+                    TimeOut: "Time is Over"
+               })
+            }
+            else{
+                this.setState({
+                    second: this.state.second - 1
+                })
+            }
+        },1000)
     }
 
+    Stop = ()=>{    
+        console.log(this.state.second)
+        // if(this.state.second > 0){
+        //     this.setState({
+        //         second: 0,
+        //         show: false
+        //     })
+        //     clearInterval(this.internalId)
+        // }
+        if(this.state.show == true){
+            this.setState({
+                second: 0,
+                show: false
+            })
+        }
+        else{
+            this.setState({
+                show: true
+            })
+        }
 
-    getData = () => {
-        this.setState({
-        isLoading: true
-        });
-        setTimeout(() => {
-        this.setState({
-            count: this.state.count + 1,
-            data: "OUTPUT",
-            isLoading: false
-        });
-        }, 2000);
-    };
+        console.log()
+        console.log(this.internalId)
+        
+    }
 
-
-    // Create a component Time that has an input box
-    // user can input seconds in the input box
-    // use setInterval to reduce the seconds to 0
-    // on 0 it show a message to the user that the countdown is over
-    // Create a button SHOW/HIDE on the parent component that will conditionally render the Time component
-    // it will toggle
-    // If you hide it, then make sure the setInterval is cleared
-    
+    // componentWillMount(){
+    //     console.log('unmount')
+    //     clearInterval(this.internalId)
+    // }
 
     render(){
         return(
             <div>
-                <p>Enter the time here</p>
-                <input
-                name="time"
-                type="number"
-                value={this.state.time} 
-                placeholder="sec"
-                onChange={this.HandleChange}/>
+            <div style={{display:"flex", direction:"row"}}>
+                {this.state.show ? <div></div> :
+                <form onSubmit={this.handleSubmit}>
+                    Enter Seconds : <input type="text" name="second" value={this.state.second} onChange={this.handleChange}></input>
+                    <button type="submit"> Submit</button>
+                </form>
+                }
+                <button style={{ margin: "1%",
+                width:"200px",
+                marginTop:"0px",
+                    padding: "1%",
+                    fontSize: "larger",
+                    height:"50px"
+                    }}
+                    onClick={this.Stop}>Show/Hide</button> 
+            </div>
+            {this.state.show ? <div></div> :  <h1 style={{color:"red"}}>{this.state.TimeOut}</h1>}
             </div>
         )
     }
-
-} 
+}
