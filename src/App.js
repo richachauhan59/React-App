@@ -15,7 +15,8 @@ import LineThrough from './React - Update-lineThrough/todoLinethrough'
 import GitHub from './GitHub/GitHub.jsx'
 import Timer from './Timer_ComponentWillUnmount/Timer.jsx'
 import GitHubAPI from './GitHubAxios/githubAPI'
-
+import SideBar from './React Sidebar/SideBar'
+import CardNavbar from './React_Card_Navbar/navbar'
 
 function App() {
   return (
@@ -40,10 +41,16 @@ function App() {
 
       {/* DATE 27/AUG/2020 */}
       {/* <GitHub/> */}
-      <Timer/>
+      {/* <Timer/> */}
 
       {/* DATE 28/ AUg/ 2020 */}
       {/* <GitHubAPI/> */}
+
+      {/* DATE 31/AUG/2020 */}
+      {/* <SideBar/> */}
+
+      {/* DATE 2ND SEPT 2020 */}
+      <CardNavbar/>
 
     </div>
   );
