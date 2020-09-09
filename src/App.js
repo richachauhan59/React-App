@@ -17,11 +17,13 @@ import Timer from './Timer_ComponentWillUnmount/Timer.jsx'
 import GitHubAPI from './GitHubAxios/githubAPI'
 import SideBar from './React Sidebar/SideBar'
 import CardNavbar from './React_Card_Navbar/navbar'
+import ToggleToDo from './4thSEPT/ToggleTodoMain'
+import ReactForm from './4thSept_Form/FormMain'
 
 function App() {
   return (
     <div className="App">
-      {/* <Main/>
+      {/* <Main/>  
       <MainList/>
       <MainButton/> */}
       {/* <State/> */}
@@ -43,14 +45,18 @@ function App() {
       {/* <GitHub/> */}
       {/* <Timer/> */}
 
-      {/* DATE 28/ AUg/ 2020 */}
+      {/* DATE 28/ AUG/ 2020 */}
       {/* <GitHubAPI/> */}
 
       {/* DATE 31/AUG/2020 */}
       {/* <SideBar/> */}
 
-      {/* DATE 2ND SEPT 2020 */}
-      <CardNavbar/>
+      {/* DATE 2/SEPT/2020 */}
+      {/* <CardNavbar/> */}
+
+      {/* DATE 4/SEPT/2020 */}
+      {/* <ToggleToDo/> */}
+      <ReactForm/>
 
     </div>
   );

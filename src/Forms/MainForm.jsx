@@ -15,6 +15,7 @@ export default class Form extends React.Component{
             items:[]
         }
     }
+    
         // full name
         // age
         // marital status ( use checkbox )

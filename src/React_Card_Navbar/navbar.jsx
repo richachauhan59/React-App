@@ -33,7 +33,7 @@ export default class Navbar extends React.Component{
                         <Button secondary>About</Button>
                     </Layout>
                 </SeconDiv>    
-                </ MainDiv>
+                </MainDiv>
             </div>
           );
     }
