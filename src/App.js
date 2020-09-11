@@ -27,7 +27,7 @@ function App() {
       <MainList/>
       <MainButton/> */}
       {/* <State/> */}
-      {/* <Restaurent/> */}
+      <Restaurent/>
       {/* <Card/> */}
 
       {/*DATE  25/Aug/2020 */}
@@ -56,7 +56,7 @@ function App() {
 
       {/* DATE 4/SEPT/2020 */}
       {/* <ToggleToDo/> */}
-      <ReactForm/>
+      {/* <ReactForm/> */}
 
     </div>
   );
